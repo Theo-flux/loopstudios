@@ -1,0 +1,54 @@
+header {
+  background-image: url(images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 130vh;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* gap: 10em; */
+}
+
+.landing-text {
+  border: 2px solid var(--White);
+  margin: 15em 0;
+}
+
+.landing-text h1 {
+  padding: .3em;
+  font-size: 3rem;
+  color: var(--White);
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.landing-text span {
+  display: block;
+}
+
+
+@media screen and (min-width:768px) {
+  header {
+    background-image: url(images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .landing-text {
+    width: 65%;
+    max-width: 600px;
+  }
+
+  .header-content h1 {
+    font-size: 4rem;
+  }
+
+  .header-content span {
+    display: inline;
+  }
+}

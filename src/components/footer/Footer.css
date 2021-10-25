@@ -1,0 +1,126 @@
+footer {
+  background-color: var(--Black);
+  color: var(--White);
+  height: auto;
+}
+
+.footer-content {
+  padding: 4em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content .top {
+  /* border: 1px solid magenta; */
+}
+
+.footer-content .top img {
+  width: 100%;
+  object-fit: contain;
+  /* border: 1px solid magenta; */
+}
+
+.footer-content .top ul {
+  list-style: none;
+  margin: 2em 0;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+}
+
+.footer-content .top ul li {
+  padding: .8em 0;
+}
+
+.footer-content .top ul li a {
+  color: var(--White);
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-content .top ul li a::after,
+.socioplatform .socio-icon::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  border-radius: 15px;
+  background-color: var(--White);
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+  /* border: 1px solid magenta; */
+}
+
+.footer-content .top ul li a:hover::after,
+.socioplatform .socio-icon:hover::after {
+  transition: width 0.2s linear;
+  width: 50%;
+}
+
+.footer-content .bottom {
+  /* border: 1px solid magenta; */
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socioplatform {
+  /* border: 1px solid magenta; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 160px;
+}
+
+.socioplatform .socio-icon {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.footer-content .bottom p{
+  font-size: 1rem;
+  padding: 1em 0;
+  color: var(--DarkGray);
+}
+
+@media screen and (min-width: 768px) {
+
+  footer {
+    height: auto;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2em 0 0 0;
+  }
+
+  .footer-content .top{
+    width: 40%;
+  }
+
+  .footer-content .top img {
+    width: 40%;
+    margin: 0;
+  }
+
+  .footer-content .top ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: .3em 0;
+  }
+
+  .footer-content .bottom {
+    width: 40%;
+    align-items: flex-end;
+  }
+}

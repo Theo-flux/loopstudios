@@ -1,0 +1,15 @@
+.section {
+  /* margin: 2em 0; */
+  height: 1300px;
+   /* border: 1px solid magenta; */
+}
+
+.section-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.flex-item {
+  height: 150px;
+}
