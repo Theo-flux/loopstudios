@@ -7,7 +7,7 @@ export default function Footer(){
   return(
     <footer>
       <div className="footer-content container">
-        <div className="top">
+        <div className="footer-top">
           <img className= "logo" src={Logo} alt="Loopstudios logo" />
           <ul>
             {Items.map((item, index) => (

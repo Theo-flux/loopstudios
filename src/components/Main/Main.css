@@ -1,5 +1,8 @@
 main {
-  padding: 6em 0;
+  padding: 5em 0;
+}
+
+.main {
   /* border: 1px solid magenta; */
 }
 
@@ -35,6 +38,8 @@ img {
 @media screen and (min-width: 768px){
   main {
     position: relative;
+    top:0;
+    left: 0;
   }
 
   img {
@@ -45,21 +50,21 @@ img {
     background-color: var(--White);
     position: absolute;
     top: 40%;
-    left: 45%;
-    width: 50%;
+    left: 44%;
+    width: 49%;
+    height: 350px;
     /* border: 1px solid magenta; */
     align-items: flex-start;
-    padding: 3em;
+    padding: 1em 2em;
   }
 
   .description h2 {
     text-align: left;
-    width: 50%;
   }
 
   .description p {
     text-align: left;
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
   }
 
 }
